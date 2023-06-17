@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Chunker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="text-form" onsubmit="event.preventDefault(); chunkInput();">
+        <textarea id="text-input" placeholder="Enter text to chunk"></textarea> 
+        <input id="chunk-size-input" type="number" min="1" placeholder="Chunk size (default 500)" /><br><br>
+        <button id="chunk-button" type="submit">Chunk Text</button>
+    </form>
+    <div id="button-frame"></div>
+    <div>Clicked buttons: <span id="clicked-buttons"></span></div>
+    <script src="app.js"></script>
+</body>
+</html>
